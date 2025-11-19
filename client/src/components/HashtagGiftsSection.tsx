@@ -68,13 +68,7 @@ const HashtagGiftsSection = () => {
                   className="text-sm md:text-base text-foreground/80 leading-relaxed mb-6"
                   data-testid="text-gifts-message"
                 >
-                  Your presence is the greatest gift we could ever receive.
-                  <br /><br />
-                  Should you wish to extend your generosity, a token of love and support toward our new beginnings would be deeply appreciated.
-                  <br /><br />
-                  With love and gratitude,
-                  <br />
-                  Neil and Precious
+                  Your presence is the greatest gift of all. Should you wish to honor us with a gift, we kindly prefer cash to help us celebrate and create lasting memories. Thank you for your love and support.
                 </p>
                 
                 <div className="mt-8">
