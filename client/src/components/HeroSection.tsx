@@ -23,27 +23,19 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
         className="absolute inset-0 w-full h-full object-cover"
         data-testid="hero-image"
       />
-
+      
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-black/40" />
-
+      
       {/* Content - Centered Names */}
-      <div className="relative z-10 flex flex-col items-center justify-start md:justify-center min-h-screen text-center px-4 pt-24 md:pt-0">
-        {/* Main Content */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="space-y-6"
-        >
-        
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6">
         {/* Tagline */}
         <div className={`transition-all duration-700 mb-4 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
           <p className="text-sm sm:text-base md:text-lg text-white font-light tracking-[0.3em] uppercase" data-testid="text-tagline" style={{ fontFamily: 'Satoshi, sans-serif', fontWeight: 300 }}>
             WHERE LOVE BLOOMS
           </p>
         </div>
-
+        
         {/* Names */}
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-white tracking-wide" data-testid="text-main-invitation" style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}>
           {animationsEnabled ? (
@@ -81,9 +73,8 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
             January 18, 2026 . General Santos City
           </p>
         </div>
-        </motion.div>
       </div>
-
+      
       {/* Scroll Down Arrow - Bottom of screen */}
       <div className={`absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 transition-all duration-700 ${(animationsEnabled && showElements) ? 'animate-fade-up opacity-100' : (!animationsEnabled ? 'opacity-100' : 'opacity-0')}`}>
         <div className="flex flex-col items-center justify-center space-y-2 text-center pl-[-21px] pr-[-21px] ml-[-27px] mr-[-27px]">
@@ -93,19 +84,19 @@ const HeroSection = ({ audioRef }: HeroSectionProps) => {
           </svg>
         </div>
       </div>
-
+      
       {/* Styles */}
       <style>{`
         .hero-section {
           min-height: 100vh !important;
         }
-
+        
         @media (min-width: 768px) {
           .hero-section {
             min-height: 100vh !important;
           }
         }
-
+        
         @media (max-width: 767px) {
           .hero-section {
             background-attachment: scroll !important;
