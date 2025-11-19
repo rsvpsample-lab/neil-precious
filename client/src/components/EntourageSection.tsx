@@ -8,29 +8,31 @@ const EntourageSection = () => {
     ],
     principalSponsors: {
       title: "Principal Sponsors",
-      men: [
+      couples: [
+        { man: "Roger Patron", woman: "Eden Patron" },
+        { man: "Alejandro Pineda", woman: "Leonorita Pineda" },
+        { man: "Danilo Capares", woman: "Maysie Capares" },
+        { man: "Alfonso Maraggun", woman: "Maricel Maraggun" },
+        { man: "Joseph Lagura", woman: "Gina Lagura" },
+        { man: "Edwin Saplad", woman: "Revelita Saplad" },
+        { man: "Jacinto Tugade", woman: "Angelita Tugade" },
+        { man: "Romulo Paclibar", woman: "Berly Paclibar" },
+        { man: "Rolando Bandiola", woman: "Gemma Bandiola" },
+        { man: "Edgar Saplad", woman: "Melly Saplad" },
+        { man: "Edilberto Saplad", woman: "Lea Saplad" },
+        { man: "Efren Canonigo", woman: "Feln Canonigo" }
+      ],
+      soloMen: [
         "PCOL. REYNALDO JR. DENILA",
         "PCOL. ALLADIN TAMAYO",
         "PCOL NOEL SILVOSA",
-        "Roger & Eden Patron",
-        "Alejandro & Leonorita Pineda",
-        "Danilo & Maysie Capares",
         "Arnold Campos",
         "Erwin Maglinte",
-        "Alfonso & Maricel Maraggun",
         "Jan Osorio",
         "Wilfredo Saplad",
-        "Joseph & Gina Lagura",
-        "Edwin & Revelita Saplad",
-        "Angelita & Jacinto Tugade",
-        "Romulo & Berly Paclibar",
-        "Gemma & Rolando Bandiola",
-        "Edgar & Melly Saplad",
-        "Edilberto & Lea Saplad",
-        "Efren & Feln Canonigo",
         "Archimedes Labao"
       ],
-      women: [
+      soloWomen: [
         "Carmelita Patron",
         "Michele Omgia",
         "Rizalyn Resicco",
@@ -141,21 +143,32 @@ const EntourageSection = () => {
           <h3 className="text-xl md:text-2xl lg:text-3xl font-display font-bold mb-4 md:mb-6 text-primary" data-testid="principal-sponsors-title">
             {entourageData.principalSponsors.title}
           </h3>
-          <div className="grid grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
-            <div className="text-center" data-testid="principal-sponsors-men">
-              {entourageData.principalSponsors.men.map((name, index) => (
-                <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground mb-1 text-right" data-testid={`principal-sponsor-man-${index}`}>
-                  {name}
+          <div className="max-w-4xl mx-auto space-y-2">
+            {/* Couples - Side by Side */}
+            {entourageData.principalSponsors.couples.map((couple, index) => (
+              <div key={index} className="grid grid-cols-2 gap-4 md:gap-8" data-testid={`principal-sponsor-couple-${index}`}>
+                <p className="text-xs md:text-base lg:text-lg font-telma text-foreground text-right" data-testid={`principal-sponsor-couple-man-${index}`}>
+                  {couple.man}
                 </p>
-              ))}
-            </div>
-            <div className="text-center" data-testid="principal-sponsors-women">
-              {entourageData.principalSponsors.women.map((name, index) => (
-                <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground mb-1 text-left" data-testid={`principal-sponsor-woman-${index}`}>
-                  {name}
+                <p className="text-xs md:text-base lg:text-lg font-telma text-foreground text-left" data-testid={`principal-sponsor-couple-woman-${index}`}>
+                  {couple.woman}
                 </p>
-              ))}
-            </div>
+              </div>
+            ))}
+            
+            {/* Solo Men - Centered */}
+            {entourageData.principalSponsors.soloMen.map((name, index) => (
+              <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground text-center" data-testid={`principal-sponsor-solo-man-${index}`}>
+                {name}
+              </p>
+            ))}
+            
+            {/* Solo Women - Centered */}
+            {entourageData.principalSponsors.soloWomen.map((name, index) => (
+              <p key={index} className="text-xs md:text-base lg:text-lg font-telma text-foreground text-center" data-testid={`principal-sponsor-solo-woman-${index}`}>
+                {name}
+              </p>
+            ))}
           </div>
         </motion.div>
 
