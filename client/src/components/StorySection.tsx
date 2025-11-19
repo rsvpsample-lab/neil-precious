@@ -42,12 +42,15 @@ const StorySection = () => {
             </div>
 
             {/* Complete Story */}
-            <div className="flex items-center justify-center py-12" data-testid="text-story-content">
-              <p 
-                className="text-6xl md:text-7xl text-center text-foreground/30"
-                style={{ fontFamily: 'Boska, serif', fontWeight: 300 }}
-              >
-                Coming Soon
+            <div className="space-y-6" data-testid="text-story-content">
+              <p className="text-lg leading-relaxed text-foreground/80">
+                It all began ten years ago within the humble grounds of Mindanao State University, where two hearts destined to meet found each other in the most unexpected way. He was a young engineering student, driven by numbers and dreams, while she was a budding elementary education major, filled with warmth, patience, and a heart as gentle as her smile.
+              </p>
+              <p className="text-lg leading-relaxed text-foreground/80">
+                Though their worlds were different and their schedules often kept them apart, love always found a way. Between busy classes, campus strolls under the golden sunset and late-night talks they found a love that grew stronger each day.
+              </p>
+              <p className="text-lg leading-relaxed text-foreground/80">
+                Through the years, their bond only grew stronger. What started as campus companionship blossomed into a love that withstood distance, challenges, and time. And now, after a decade of shared dreams and unwavering devotion, they are finally ready to begin their forever—a new chapter written with love, faith, and the promise of always choosing each other.
               </p>
             </div>
 

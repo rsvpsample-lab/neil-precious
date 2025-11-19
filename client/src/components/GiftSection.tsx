@@ -45,7 +45,10 @@ const GiftSection = () => {
             {/* Main Message */}
             <div className="space-y-6">
               <p className="text-xl font-body text-primary-foreground leading-relaxed">
-                As love is what the night is all about, your presence is one we can't celebrate without. But should you still believe that a gift is worth giving, a small envelope to our future is a delightful blessing.
+                Your presence is the greatest gift of all. Should you wish to honor us with a gift, we kindly prefer cash to help us celebrate and create lasting memories.
+              </p>
+              <p className="text-lg font-body text-primary-foreground/80 leading-relaxed">
+                For your convenience, you may send your gift via GCash using the QR code below. Thank you for your love and support.
               </p>
             </div>
 
