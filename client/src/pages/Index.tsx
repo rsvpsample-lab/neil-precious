@@ -3,10 +3,6 @@ import { useEffect, useRef, useState } from 'react';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import ImageLoop from '@/components/ImageLoop';
-// Cover media
-import cover1Image from '@assets/cover1_1762595391706.JPG';
-import cover2Image from '@assets/cover2_1762595391707.JPG';
-import cover3Image from '@assets/cover3_1762595391707.JPG';
 import CountdownSection from '@/components/CountdownSection';
 import StorySection from '@/components/StorySection';
 import ScrollTriggeredTimeline from '@/components/ScrollTriggeredTimeline';
@@ -20,9 +16,15 @@ import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 import CoverSection from '@/components/CoverSection';
 import InvitationRevealSection from '@/components/InvitationRevealSection';
-import SaveTheDateSection from '@/components/SaveTheDateSection';
 import MusicConsentPopup from '@/components/MusicConsentPopup';
 import { AnimationContext } from '@/contexts/AnimationContext';
+
+// Cover media
+const cover1Image = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566013/cover1_emzxqg.jpg';
+const cover2Image = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566013/cover2_pii7wz.jpg';
+const cover3Image = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566011/cover3_ouglyk.jpg';
+const cover4Image = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566011/_JC17810_j5k3om.jpg';
+const cover5Image = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566012/_RON1982_zl4m5i.jpg';
 
 const Index = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -67,8 +69,11 @@ const Index = () => {
         <CountdownSection />
         <ImageLoop />
         <StorySection />
-        <SaveTheDateSection audioRef={audioRef} />
         <ScrollTriggeredTimeline />
+        <CoverSection
+          imageUrl={cover4Image}
+          alt="Neil & Precious Wedding Cover 4"
+        />
         <VenueSection />
         <CoverSection
           imageUrl={cover2Image}
@@ -88,6 +93,10 @@ const Index = () => {
           alt="Neil & Precious Wedding Cover 3"
         />
         <FAQSection />
+        <CoverSection
+          imageUrl={cover5Image}
+          alt="Neil & Precious Wedding Cover 5"
+        />
         <Footer />
       </main>
     </div>

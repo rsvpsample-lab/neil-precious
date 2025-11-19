@@ -3,9 +3,9 @@ import flower1Image from '@assets/flower1_1759854441524.png';
 import flowerImage from '@assets/flower_1759854441531.png';
 
 // Polaroid images
-import soulmatesImage from '@assets/souldmates_1762595139710.JPG';
-import foreverImage from '@assets/forever_1762595139709.JPG';
-import belovedImage from '@assets/beloved_1762595139707.JPG';
+const belovedImage = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566013/beloved_lazpaa.jpg';
+const soulmatesImage = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566012/soulmates_lnttx1.jpg';
+const foreverImage = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566012/forever_bwunsw.jpg';
 
 interface RusticInvitationRevealProps {
   animationsEnabled: boolean;

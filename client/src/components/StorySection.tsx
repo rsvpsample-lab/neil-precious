@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import storyCoupleImage from '@assets/lovestory_1762595139710.JPG';
 import { Heart } from 'lucide-react';
+
+const storyCoupleImage = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566011/our_story_wkumes.jpg';
 
 const StorySection = () => {
   return (

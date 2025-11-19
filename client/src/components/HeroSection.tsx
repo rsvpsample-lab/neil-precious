@@ -1,7 +1,8 @@
 import { TypeAnimation } from 'react-type-animation';
 import { useState } from 'react';
 import { useAnimationContext } from '@/contexts/AnimationContext';
-import heroImage from '@assets/hero-sectiob_1762595139710.JPG';
+
+const heroImage = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566012/hero-section_uphcwk.jpg';
 
 interface HeroSectionProps {
   audioRef: React.RefObject<HTMLAudioElement>;
