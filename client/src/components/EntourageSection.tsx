@@ -3,51 +3,75 @@ import { motion } from 'framer-motion';
 const EntourageSection = () => {
   const entourageData = {
     parents: [
-      { label: "Mother of the Groom", names: ["Ma. Nelia Lara A. Lastimosa"] },
-      { label: "Parents of the Bride", names: ["Roberto F. Rabe", "Editha C. Rabe†"] }
+      { label: "Parents of the Groom", names: ["Bonifacio Tamonman", "Lolita Tamonman", "Mark Ian Tamonman"] },
+      { label: "Parents of the Bride", names: ["Alfred Patron", "Ruby Patron"] }
     ],
     principalSponsors: {
       title: "Principal Sponsors",
       men: [
-        "Engr. Ramon Elias F. Ortiz",
-        "Gary C. Perez",
-        "Salvador A. Lastimosa Jr.",
-        "Sancho Glenn A. Lastimosa",
-        "Capt. Igmedio G. Sorrera",
-        "Henry F. Rabe",
-        "Engr. Ramon Elias F. Ortiz",
-        "Ferdinand V. Garcia",
-        "Edwin M. Clavito"
+        "PCOL. REYNALDO JR. DENILA",
+        "PCOL. ALLADIN TAMAYO",
+        "PCOL NOEL SILVOSA",
+        "Roger & Eden Patron",
+        "Alejandro & Leonorita Pineda",
+        "Danilo & Maysie Capares",
+        "Arnold Campos",
+        "Erwin Maglinte",
+        "Alfonso & Maricel Maraggun",
+        "Jan Osorio",
+        "Wilfredo Saplad",
+        "Joseph & Gina Lagura",
+        "Edwin & Revelita Saplad",
+        "Angelita & Jacinto Tugade",
+        "Romulo & Berly Paclibar",
+        "Gemma & Rolando Bandiola",
+        "Edgar & Melly Saplad",
+        "Edilberto & Lea Saplad",
+        "Efren & Feln Canonigo",
+        "Archimedes Labao"
       ],
       women: [
-        "Dra. Ma. Adelaida Decangchon-Ortiz",
-        "Dra. Melanie Katherine A. Lastimosa",
-        "Arlene D. Lastimosa",
-        "Jessly M. Lastimosa",
-        "Viola E. Sorrera",
-        "Grace M. Rabe",
-        "Dra. Ma. Adelaida Decangchon-Ortiz",
-        "Edna M. Clavito",
-        "Elenita C. Barreto"
+        "Carmelita Patron",
+        "Michele Omgia",
+        "Rizalyn Resicco",
+        "Joermay Sala",
+        "Jessica Verallo",
+        "Rowena Acana",
+        "Elma Saplad",
+        "Mercy Baay",
+        "Cora Jao",
+        "Remia Carolino",
+        "Judith Benito",
+        "Lina Coloso",
+        "Marina Gabato",
+        "Leonisa Guirhem",
+        "Armie Kusela Honesto",
+        "Jocelyn Barredo"
       ]
     },
     secondarySponsors: {
       title: "Secondary Sponsors",
       roles: [
-        { role: "Candle", names: ["Jomari C. Metro", "Jazzie Ayne G. Palino"] },
-        { role: "Veil", names: ["Gerald D. Gacias", "Monette V. Velasco"] },
-        { role: "Cord", names: ["Ray Erik C. Rabe", "Vina Joy P. Rabe"] }
+        { role: "Candle", names: ["Welcar Patron", "Annabelle Patron"] },
+        { role: "Veil", names: ["Remart Saplad", "Kerjoy Saplad"] },
+        { role: "Cord", names: ["Expedito Solis Jr", "Jennifer Solis"] }
       ]
     },
-    bestMan: { name: "Crisanto Angelo A. Lastimosa", role: "Best Man" },
-    maidOfHonor: { name: "Bea C. Mateo", role: "Maid of Honor" },
+    bestMan: { name: "Omegs Gryeane Solis", role: "Best Man" },
+    maidOfHonor: { name: "Shanaden D. Patron", role: "Maid of Honor" },
     groomsmen: [
-      "John Cedrick C. Metro",
-      "Justin Carlos H. Gallardo"
+      "Judah Ray Pagtalunan",
+      "Alfon Philip Sabido",
+      "Azarel John Siasico",
+      "Wesley James Villaver",
+      "Raven Dave Suarez"
     ],
     bridesmaids: [
-      "Mana Cecilia A. Lastimosa",
-      "Pauline Marie L. Lagutan"
+      "Michaela Nicole Tuyco",
+      "Chique Kyle Ann Florin",
+      "Denisse Rianne Ferolino",
+      "Mercianne Joy Siasico",
+      "Christine Dale Yuson"
     ],
     bearers: [
       { role: "Ring Bearer", names: ["Kim Ivan M. Lastimosa"] },
