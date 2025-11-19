@@ -1,5 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { useAnimationContext } from '@/contexts/AnimationContext';
 
 const heroImage = 'https://res.cloudinary.com/dsitzod3c/image/upload/v1763566012/hero-section_uphcwk.jpg';
