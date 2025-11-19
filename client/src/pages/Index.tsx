@@ -34,7 +34,7 @@ const Index = () => {
   const handleMusicConsent = async (consent: boolean) => {
     setShowMusicConsent(false);
     setAnimationsEnabled(true);
-
+    
     if (consent && audioRef.current) {
       try {
         await audioRef.current.play();
